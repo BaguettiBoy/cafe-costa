@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Experiência gastronómica em Praça Machado dos Santos 149, 4440-452 Valongo, Portugal.">
+    <title>Café Costa</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+      :root {
+        --site-primary: #b91c1c;
+        --site-secondary: #ea580c;
+        --site-accent: #facc15;
+        --site-dark: #2b160b;
+      }
+      body { background: #fffaf5; }
+      .navbar {
+        background: rgba(43, 22, 11, 0.78) !important;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(43, 22, 11, 0.18);
+      }
+      .navbar .container {
+        align-items: center;
+        flex-wrap: nowrap;
+        min-height: 66px;
+      }
+      .navbar-header {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+      }
+      #navbarCollapse {
+        display: flex !important;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        min-width: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      #navbarCollapse::-webkit-scrollbar {
+        display: none;
+      }
+      .navbar-brand img {
+        max-height: 38px;
+        width: auto;
+      }
+      .navbar-brand .brand-name,
+      .footer-brand-name {
+        color: #fff;
+        display: inline-block;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 1.1;
+        max-width: 260px;
+        overflow-wrap: anywhere;
+      }
+      .navbar-brand {
+        align-items: center;
+        display: inline-flex;
+        gap: 10px;
+      }
+      .brand-mark {
+        align-items: center;
+        background: linear-gradient(135deg, var(--site-secondary), var(--site-primary));
+        border: 1px solid rgba(255, 247, 237, 0.7);
+        border-radius: 50%;
+        box-shadow: 0 8px 22px rgba(43, 22, 11, 0.22);
+        color: #fff;
+        display: inline-flex;
+        flex: 0 0 auto;
+        height: 38px;
+        justify-content: center;
+        width: 38px;
+      }
+      .brand-mark i {
+        font-size: 20px;
+        line-height: 1;
+      }
+      .footer-logo {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+      }
+      .navbar-expand-md .navbar-nav {
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2px;
+        min-width: max-content;
+      }
+      .navbar-expand-md .navbar-nav .nav-item {
+        white-space: nowrap;
+      }
+      .navbar-expand-md .navbar-nav .nav-link {
+        color: #fff !important;
+        font-size: 13px;
+        line-height: 1.2;
+        padding: 8px 8px;
+        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.32);
+      }
+      .top-nav-collapse {
+        background: rgba(255, 250, 245, 0.96) !important;
+      }
+      .top-nav-collapse .navbar-nav .nav-link {
+        color: var(--site-dark) !important;
+        text-shadow: none;
+      }
+      .top-nav-collapse .navbar-brand .brand-name {
+        color: var(--site-dark);
+      }
+      #hero-area .contents .head-title { overflow-wrap: anywhere; }
+      #hero-area .contents {
+        background: #fffaf5;
+        border: 1px solid rgba(70, 23, 7, 0.12);
+        border-radius: 8px;
+        box-shadow: 0 12px 34px rgba(43, 22, 11, 0.1);
+        color: var(--site-dark);
+        display: block;
+        margin: 22px auto 0;
+        max-width: 760px;
+        padding: 18px 24px;
+      }
+      #hero-area .contents .head-title {
+        color: var(--site-dark);
+        font-size: 36px;
+        line-height: 1.15;
+        margin: 8px 0 6px;
+      }
+      #hero-area .contents p {
+        margin-bottom: 0;
+      }
+      #hero-area .contents .head-title + p {
+        margin-top: 0;
+      }
+      #hero-area.hero-area-bg {
+        position: relative;
+        background: #fffaf5 !important;
+        background-blend-mode: multiply;
+        padding: 72px 0 28px;
+      }
+      #hero-area.hero-area-bg::before {
+        content: none;
+      }
+      #hero-area.hero-area-bg > .container { position: relative; z-index: 1; }
+      .btn-common,
+      .controls .active,
+      .services-item:hover .icon i,
+      .back-to-top i {
+        background: linear-gradient(135deg, var(--site-secondary), var(--site-primary));
+        border-color: var(--site-secondary);
+      }
+      .btn-border:hover,
+      .navbar-expand-md .navbar-nav .nav-link:focus,
+      .navbar-expand-md .navbar-nav .nav-link:hover,
+      .navbar-expand-md .navbar-nav .active > .nav-link {
+        color: var(--site-accent) !important;
+      }
+      .section-header .section-title::before,
+      .section-header .section-title::after {
+        background: var(--site-secondary);
+      }
+      #about {
+        background: #fffaf5;
+      }
+      #about .text-wrapper {
+        background: #fffaf5;
+        color: var(--site-dark);
+      }
+      #about .title-hl {
+        color: var(--site-dark);
+      }
+      #about .text-wrapper p {
+        color: var(--site-dark);
+      }
+      #about .feature-bg {
+        background: linear-gradient(135deg, var(--site-secondary), var(--site-primary));
+      }
+      #about .feature-item .icon {
+        border-color: rgba(255, 250, 245, 0.78);
+      }
+      #about .feature-item .icon i,
+      #about .feature-content,
+      #about .feature-content h3,
+      #about .feature-content p {
+        color: #fffaf5;
+      }
+      #about .feature-item:hover .icon {
+        background: var(--site-accent);
+        border-color: var(--site-accent);
+      }
+      #about .feature-item:hover .icon i {
+        color: var(--site-dark);
+      }
+      .icon i,
+      .contact-icon i,
+      .counter-box .icon-o i {
+        color: var(--site-secondary);
+      }
+      #blog .blog-item-img img { height: 240px; object-fit: cover; }
+      #hero-area .img-thumb {
+        margin: 0 calc(50% - 50vw);
+        max-width: none;
+        overflow: hidden;
+        width: 100vw;
+      }
+      #hero-area .img-thumb img {
+        aspect-ratio: 16 / 9;
+        border-radius: 0;
+        display: block;
+        height: clamp(420px, 62vh, 720px);
+        max-height: none;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+      #hero-area .hero-carousel {
+        background: var(--site-dark);
+        position: relative;
+      }
+      #hero-area .hero-slide {
+        inset: 0;
+        opacity: 0;
+        position: absolute;
+        transition: opacity 900ms ease;
+      }
+      #hero-area .hero-slide.is-active {
+        opacity: 1;
+        position: relative;
+      }
+      #hero-area .hero-slide:not(.is-active) {
+        pointer-events: none;
+      }
+      .skill-area img.img-fluid {
+        aspect-ratio: 4 / 3;
+        border-radius: 8px;
+        max-height: 430px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+      #blog .blog-item-img {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+      }
+      #blog .blog-item-img img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+      .testimonial-item .img-thumb img { height: 96px; width: 96px; object-fit: cover; }
+      .client-item-wrapper img { max-height: 72px; object-fit: contain; width: auto; }
+      @media (max-width: 1199.98px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+          font-size: 12px;
+          padding: 8px 5px;
+        }
+        .navbar-brand img {
+          max-height: 34px;
+        }
+      }
+      @media (max-width: 767.98px) {
+        .navbar .container {
+          flex-wrap: nowrap;
+          gap: 12px;
+        }
+        #navbarCollapse {
+          background: transparent;
+          border-radius: 0;
+          margin-top: 0;
+          padding: 0;
+        }
+        .navbar-expand-md .navbar-nav {
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+        .navbar-expand-md .navbar-nav .nav-link,
+        .top-nav-collapse .navbar-nav .nav-link {
+          color: #fff !important;
+          padding: 8px 6px;
+        }
+        .navbar-brand .brand-name {
+          font-size: 16px;
+          max-width: 150px;
+        }
+        .brand-mark {
+          height: 34px;
+          width: 34px;
+        }
+        #hero-area .contents {
+          margin-top: 16px;
+          padding: 16px 18px;
+        }
+        #hero-area .contents .head-title {
+          font-size: 28px;
+        }
+        #hero-area.hero-area-bg {
+          padding: 64px 0 24px;
+        }
+        #hero-area .img-thumb img {
+          height: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-wrap">
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><span class="brand-mark"><i class="lni-dinner"></i></span><span class="brand-name">Café Costa</span></a>
+          </div>
+          <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active"><a class="nav-link page-scroll" href="#hero-area">Início</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#about">A casa</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#highlights">Reservas</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#counter">Avaliações</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#blog">Pratos</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#process">Visita</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#testimonial">Opiniões</a></li>
+              <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="hero-area" class="hero-area-bg" style="background-image: url('assets/generated/web-heroBackground-1780741993529.jpg'); background-position: center center; background-size: cover;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.2s">
+                <div class="hero-carousel" data-hero-carousel data-interval="5000">
+                <div class="hero-slide is-active"><img class="img-fluid" src="assets/generated/web-heroSlides-0-1780741993928.jpg" alt="Café Costa"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-1-1780741994373.png" alt="Café Costa"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-2-1780741994985.jpg" alt="Café Costa"></div>
+                <div class="hero-slide"><img class="img-fluid" src="assets/generated/web-heroSlides-3-1780741995569.jpg" alt="Café Costa"></div>
+                </div>
+              </div>
+              <div class="contents text-center">
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Restaurante</p>
+                <h1 class="head-title wow fadeInUp" data-wow-delay="0.3s">Café Costa</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Experiência gastronómica em Praça Machado dos Santos 149, 4440-452 Valongo, Portugal.</p>
+                <div class="header-button wow fadeInUp" data-wow-delay="0.5s">
+                  <a href="#contact" class="btn btn-common">Reservar ou contactar</a>
+                  <a href="#services" class="btn btn-border">Ver especialidades</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-wrapper">
+              <div>
+                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">Sobre Café Costa</h2>
+                <p class="mb-4">Café Costa apresenta uma experiência gastronómica pensada para reunir boa comida, ambiente e momentos à mesa. Praça Machado dos Santos 149, 4440-452 Valongo, Portugal · Avaliação 4.3/5 com 1062 opiniões · segunda-feira: Fechado.</p>
+                <a href="#contact" class="btn btn-common">Falar connosco</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 padding-none feature-bg">
+            <div class="feature-thumb">
+              
+              <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="icon"><i class="lni-star"></i></div>
+                <div class="feature-content">
+                  <h3>Sabores e ambiente</h3>
+                  <p>Um espaço pensado para destacar a cozinha, o ambiente e a experiência à mesa em Café Costa.</p>
+                </div>
+              </div>
+              <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                <div class="icon"><i class="lni-heart"></i></div>
+                <div class="feature-content">
+                  <h3>Horário e localização</h3>
+                  <p>Morada, horário e contactos visíveis para facilitar reservas e visitas.</p>
+                </div>
+              </div>
+              <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
+                <div class="icon"><i class="lni-check-box"></i></div>
+                <div class="feature-content">
+                  <h3>Reserva simples</h3>
+                  <p>Tudo preparado para perceber rapidamente quando ir e como contactar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="highlights" class="video-promo section-padding text-center" style="background-image: url('assets/img/bg-video.jpg'); background-position: center center; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 video-promo-content">
+            <h2>Reserva ou visita Café Costa</h2>
+            <p>Consulta o horário, confirma a morada e entra em contacto para reservar ou visitar.</p>
+            <a href="#contact" class="btn btn-common">Reservar ou contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="counter" class="section-padding" style="background-image: url('assets/img/count-bg.jpg'); background-position: center center; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="row">
+              
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="counter-box wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="icon-o"><i class="lni-users"></i></div>
+                  <div class="fact-count">
+                    <h3><span class="counter">4.3</span>/5</h3>
+                    <p>Avaliação média</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="counter-box wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="icon-o"><i class="lni-star-filled"></i></div>
+                  <div class="fact-count">
+                    <h3><span class="counter">1062</span></h3>
+                    <p>Opiniões</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Destaques de Café Costa</h2>
+          <p>Uma visão rápida da experiência gastronómica, da localização e da presença online.</p>
+        </div>
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-img">
+                <img src="assets/generated/web-showcase-0-1780741996549.jpg" alt="Restaurante">
+              </div>
+              <div class="blog-item-text">
+                <h3>Restaurante</h3>
+                <p>Praça Machado dos Santos 149, 4440-452 Valongo, Portugal · Avaliação 4.3/5 com 1062 opiniões.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.5s">
+              <div class="blog-item-img">
+                <img src="assets/generated/web-showcase-1-1780741996913.jpg" alt="Localização">
+              </div>
+              <div class="blog-item-text">
+                <h3>Localização</h3>
+                <p>Praça Machado dos Santos 149, 4440-452 Valongo, Portugal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.7s">
+              <div class="blog-item-img">
+                <img src="assets/generated/web-showcase-2-1780741998030.jpg" alt="Horário">
+              </div>
+              <div class="blog-item-text">
+                <h3>Horário</h3>
+                <p>Segunda-feira: Fechado · terça-feira: 08:00 – 00:00.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="process" class="skill-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="img-fluid" src="assets/generated/web-about-1780741996077.jpg" alt="Café Costa">
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 info wow fadeInRight" data-wow-delay="0.3s">
+            <div class="site-heading">
+              <h2 class="section-title">A experiência</h2>
+              <p>Descobre o ambiente, consulta o horário e encontra uma forma simples de reservar ou visitar Café Costa.</p>
+              <p>Vê os detalhes, escolhe o melhor momento e entra em contacto para reservar.</p>
+            </div>
+            <div class="skills-section">
+              
+              <div class="progress-box">
+                <h5>
+                  <span>Clareza</span>
+                  <span class="pull-right">90%</span>
+                </h5>
+                <div class="progress" style="opacity: 1; left: 0px;">
+                  <div class="progress-bar" role="progressbar" data-width="90" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>
+                  <span>Contacto</span>
+                  <span class="pull-right">85%</span>
+                </h5>
+                <div class="progress" style="opacity: 1; left: 0px;">
+                  <div class="progress-bar" role="progressbar" data-width="85" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>
+                  <span>Localização</span>
+                  <span class="pull-right">85%</span>
+                </h5>
+                <div class="progress" style="opacity: 1; left: 0px;">
+                  <div class="progress-bar" role="progressbar" data-width="85" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="testimonial section-padding" style="background-image: url('assets/img/testimonial.jpg'); background-position: center center; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-header text-center">
+              <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">O que dizem os clientes</h2>
+              <p>Comentários públicos encontrados no Google Maps.</p>
+            </div>
+            <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="0.6s">
+              
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjWIscV6i4X9TmBbm0EOQqgSc0CybCM5oQQpAarWGhHsOXbUP-i8=s128-c0x00000000-cc-rp-mo-ba5" alt="Laura Ferreira">
+                  </div>
+                  <div class="info">
+                    <h2>Laura Ferreira</h2>
+                    <h3>Google Maps · há 2 anos</h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Apesar de morar relativamente perto foi a primeira vez que experimentei o café e não será certamente a última. Cheguei.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVL3CX2ReFeS_5IUoxuF-fsubbSfvlL8KCYvFqnqBaoMQmzrXySHw=s128-c0x00000000-cc-rp-mo-ba8" alt="Manuel Soares">
+                  </div>
+                  <div class="info">
+                    <h2>Manuel Soares</h2>
+                    <h3>Google Maps · há um ano</h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Simpatia de todos os funcionários, experimentamos os Pregos o Galiota e o Normal e não ficamos fãs, o Cachorro gostei.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjU-fRxv-EXLBgowNkQaw5kFB0xpSHMQssFQ1n68SmC_gLbAWGY=s128-c0x00000000-cc-rp-mo-ba5" alt="Claudia Almeida">
+                  </div>
+                  <div class="info">
+                    <h2>Claudia Almeida</h2>
+                    <h3>Google Maps · há 3 anos</h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Fomos atrás dos cachorrinhos do gazela, mas não é a mesma coisa. de qualquer forma os cachorrinhos estavam bons e.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-block">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6"><div class="form-group"><input type="text" class="form-control" id="name" name="name" placeholder="Nome" required></div></div>
+                  <div class="col-md-6"><div class="form-group"><input type="email" id="email" class="form-control" name="email" placeholder="Email" required></div></div>
+                  <div class="col-md-12"><div class="form-group"><input type="text" id="msg_subject" class="form-control" placeholder="Assunto" required></div></div>
+                  <div class="col-md-12">
+                    <div class="form-group"><textarea class="form-control" id="message" placeholder="Mensagem" rows="5" required></textarea></div>
+                    <div class="submit-button">
+                      <button class="btn btn-common" id="form-submit" type="submit">Enviar mensagem</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-right-area wow fadeIn">
+              <div class="contact-title">
+                <h1>Contacto</h1>
+                <p>Experiência gastronómica em Praça Machado dos Santos 149, 4440-452 Valongo, Portugal. Horário disponível.</p>
+              </div>
+              <h2>Detalhes</h2>
+              <div class="contact-right">
+                <div class="single-contact"><div class="contact-icon"><i class="lni-map-marker"></i></div><p>Praça Machado dos Santos 149, 4440-452 Valongo, Portugal</p></div>
+                <div class="single-contact"><div class="contact-icon"><i class="lni-envelope"></i></div><p><a href="mailto:reservas@example.com">reservas@example.com</a></p></div>
+                <div class="single-contact"><div class="contact-icon"><i class="lni-phone-handset"></i></div><p><a href="tel:224220123">22 422 0123</a></p></div>
+                <div class="single-contact"><div class="contact-icon"><i class="lni-alarm-clock"></i></div><p><strong>Horario:</strong> Segunda-feira: Fechado · terça-feira: 08:00 – 00:00</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-3 col-xs-12">
+            <div class="footer-logo"><span class="brand-mark footer-brand-mark"><i class="lni-dinner"></i></span><span class="footer-brand-name">Café Costa</span></div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="social-icon text-center">
+              <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+              <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+              <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+              <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-xs-12">
+            <p class="float-right">© 2026 Café Costa. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="back-to-top"><i class="lni-arrow-up"></i></a>
+    <div id="preloader"><div class="loader" id="loader-1"></div></div>
+
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        var carousels = document.querySelectorAll("[data-hero-carousel]");
+        carousels.forEach(function (carousel) {
+          var slides = carousel.querySelectorAll(".hero-slide");
+          if (slides.length < 2) return;
+          var active = 0;
+          var interval = parseInt(carousel.getAttribute("data-interval") || "5000", 10);
+          window.setInterval(function () {
+            slides[active].classList.remove("is-active");
+            active = (active + 1) % slides.length;
+            slides[active].classList.add("is-active");
+          }, interval);
+        });
+      })();
+    </script>
+  </body>
+</html>
